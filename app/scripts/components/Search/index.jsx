@@ -5,8 +5,8 @@ class Search extends React.Component {
   componentDidMount() {
     this.addLibrary();
     setTimeout(() => {
-      // this.addResultTitle();
-    }, 1500);
+      this.addResultTitle();
+    }, 1000);
   }
 
   addLibrary() {
@@ -20,12 +20,12 @@ class Search extends React.Component {
 
   addResultTitle() {
     document.getElementById('gsc-i-id1').placeholder = 'Search in prepdata.org';
-    const thead = document.createElement('thead');
-    const tr = document.createElement('tr');
-    const th = document.createElement('th');
-    th.innerHTML = 'MOST POPULAR SEARCHES';
-    const tr1 = tr.appendChild(th);
-    thead.appendChild(tr1);
+    // const thead = document.createElement('thead');
+    // const tr = document.createElement('tr');
+    // const th = document.createElement('th');
+    // th.innerHTML = 'MOST POPULAR SEARCHES';
+    // const tr1 = tr.appendChild(th);
+    // thead.appendChild(tr1);
     // document.getElementsByClassName('gsc-completion-container')[0].appendChild(thead);
   }
 

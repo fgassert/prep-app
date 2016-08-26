@@ -12,6 +12,7 @@ import Explore from './containers/Explore';
 import DatasetDetail from './containers/Dataset';
 import About from './components/About';
 import FAQ from './components/FAQ';
+import SearchDetail from './containers/Search';
 import Dashboards from './containers/Dashboards';
 import DashboardsDetail from './containers/Dashboards/DashboardDetail';
 import Insights from './containers/Insights';
@@ -106,6 +107,7 @@ function Routes(props) {
         <Route path={'dashboards'} component={Dashboards} />
         <Route path={'insights'} component={Insights} />
       </Route>
+      <Route path="search/:param" component={SearchDetail} />
       <Route path="explore(/:lat)(/:lng)(/:zoom)" component={Explore} />
       <Route path="dashboard/:slug(/:tab)" component={DashboardsDetail} />
       <Route path="insight/:slug" component={InsightsDetail} />
